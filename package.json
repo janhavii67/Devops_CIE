@@ -1,0 +1,12 @@
+{
+  "name": "student-task-manager",
+  "version": "1.0.0",
+  "description": "Student Task Manager web application for DOSSL Assignment 1 and Docker Assignment 4",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
