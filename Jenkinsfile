@@ -26,7 +26,7 @@ pipeline {
                 bat 'docker build -t my-app:latest .'
             }
         }
-    }ppData\\Local\\
+    }
 
     post {
         success {
