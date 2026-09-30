@@ -29,7 +29,7 @@ pipeline {
 
         stage('Deployment of Docker Image') {
             steps {
-                sh 'docker run -d -p 3000:3000 my-app:latest'
+                sh 'docker run -d -p 8000:8000 my-app:latest'
             }
         }
     }
