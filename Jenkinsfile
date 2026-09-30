@@ -27,16 +27,12 @@ pipeline {
             }
         }
 
-       
-
-        stage('Deployment to Kubernetes') {
+        stage('Deployment of Docker Image') {
             steps {
-                sh 'kubectl apply -f deployment.yaml --validate=false'
-                 sh 'kubectl apply -f service.yaml --validate=false'
-            }
+                sh 'docker run -d -p 3000:3000 my-app:latest'
             }
         }
-    
+    }
 
     post {
         success {

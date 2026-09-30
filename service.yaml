@@ -8,4 +8,4 @@ spec:
   ports:
     - protocol: TCP
       port: 3000
-      NodePort: 300001
+      nodePort: 30001
