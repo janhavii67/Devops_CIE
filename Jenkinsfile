@@ -32,6 +32,14 @@ pipeline {
                 sh 'docker run -d -p 3000:3000 my-app:latest'
             }
         }
+
+        stage('Deployment to Kubernetes') {
+            steps {
+                sh 'kubectl apply -f deployment.yaml'
+                 sh 'kubectl apply -f service.yaml'
+            }
+            }
+        }
     }
 
     post {
