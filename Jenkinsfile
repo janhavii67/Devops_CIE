@@ -27,11 +27,7 @@ pipeline {
             }
         }
 
-        stage('Deployment of Docker Image') {
-            steps {
-                sh 'docker run -d -p 3000:3000 my-app:latest'
-            }
-        }
+       
 
         stage('Deployment to Kubernetes') {
             steps {
