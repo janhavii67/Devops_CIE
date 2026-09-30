@@ -26,6 +26,12 @@ pipeline {
                 sh 'docker build -t my-app:latest .'
             }
         }
+
+        stage('Deployment of Docker Image') {
+            steps {
+                sh 'docker run -d -p 3000:3000 my-app:latest'
+            }
+        }
     }
 
     post {
