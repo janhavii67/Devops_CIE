@@ -28,6 +28,17 @@ pipeline {
         }
     }
 
+
+        stage('Deploy to Kubernetes') {
+            steps {
+                bat 'minikube image load student-task-manager:1.0'
+                bat 'kubectl apply -f deployment.yaml'
+                bat 'kubectl apply -f service.yaml'
+                bat 'kubectl rollout status deployment/student-task-manager --timeout=120s'
+            }
+        }
+
+
     post {
         success {
             echo 'Pipeline completed successfully!'
