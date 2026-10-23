@@ -27,7 +27,7 @@ pipeline {
             }
         }
 
- stage('Deploy to Kubernetes') {
+stage('Deploy to Kubernetes') {
     environment {
         MINIKUBE_HOME = 'C:\\Users\\2006j\\.minikube'
         KUBECONFIG = 'C:\\Users\\2006j\\.kube\\config'
