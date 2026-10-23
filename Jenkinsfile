@@ -26,8 +26,6 @@ pipeline {
                 bat '"C:\\Users\\2006j\\AppData\\Local\\Programs\\DockerDesktop\\resources\\bin\\docker.exe" build -t student-task-manager:1.0 .'
             }
         }
-    }
-
 
         stage('Deploy to Kubernetes') {
             steps {
@@ -37,7 +35,7 @@ pipeline {
                 bat 'kubectl rollout status deployment/student-task-manager --timeout=120s'
             }
         }
-
+    }
 
     post {
         success {
