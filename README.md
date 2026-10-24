@@ -2,7 +2,7 @@
 
 This is a simple Node.js + Express Student Task Manager prepared as a base application for DOSSL Assignment 1 and later Docker containerization in Assignment 4.
 
-## Run locally
+## Run locally on computer
 
 1. Install Node.js.
 2. Open this folder in VS Code.
