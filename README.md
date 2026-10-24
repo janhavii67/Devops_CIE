@@ -1,4 +1,4 @@
-# Student Task Manager
+# Student Task Manager 1
 
 This is a simple Node.js + Express Student Task Manager prepared as a base application for DOSSL Assignment 1 and later Docker containerization in Assignment 4.
 
